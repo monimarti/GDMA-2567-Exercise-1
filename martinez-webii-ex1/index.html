@@ -18,11 +18,11 @@
 <body>	
 	<header>
 		<div class="wrapper row">
+			
+				
+		
 			<div>
-				<!-- icon -->
-			</div>
-			<div>
-				<h1>seos</h1>
+			<!-- icon -->	<h1>seos</h1>
 			</div>
 			<nav>
 				<ul>
@@ -43,15 +43,15 @@
 			</div>
 			
 			<div>
-				<p><span>We Collect Hight Quality Leads</span></p>
+				<p>We Collect Hight Quality Leads</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 				<p><a href="#contact">Contact Us</a></p>
 			</div>
 		</div>
 	</header>
 	
-	<section id="about">
-		<div class="wrapper row">
+	<section id="about" class="wrapper"><!-- row? -->
+		
 			<header>
 				<h2>What We Will Do For Your Business</h2>
 			</header>
@@ -76,30 +76,33 @@
 				<p> Hunky dory barney fanny around up the duff no biggie loo cup of tea jolly good ruddy say arse!</p>
 				<p><a href="#">get started</a></p> <!-- get started link -->
 			</section>
-		</div>
 		
+	</section>	
 		<!------------------------------------------------------------------------------------------------------------------->
-		
+	<section class="wrapper row"> <!-- is this right -->	
 		<div>
 			<!-- illustration image -->
 		</div>
 		
 		<div>
-			<p>We Create a Steps to Build a Successful Digital Product</p> <!-- would this be a header? or just a p -->
+			<header>
+				<h2></h2><p>We Create a Steps to Build a Successful Digital Product</p>
+			</header>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			<p><a href="#contact">Contact Us</a></p>
 		</div>
-		
 	</section>	
+		
 	
 	<!------------------------------------------------------------------------------------------------------------------->
 	
-	<section id="services"> <!-- Not sure if this is the correct id for this part of the website -->
-		<div  class="wrapper row">
+	<section id="services" class="wrapper"> <!-- Not sure if this is the correct id for this part of the website -->
 			<header>
 				<h2>Generating New Customers Via Online Mode</h2>
 			</header>
-			<section><!-- Icon. would this be floated? -->
+		<div class="row">
+			<section class="">
+				<div></div><!-- Icon. would this be floated? -->
 				<header>
 					<h3>All Sizes Business</h3>
 				</header>
@@ -123,55 +126,57 @@
 				</header>
 				<p>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
 			</section>
-
+		</div>
+	</section>
 			<!------------------------------------------------------------------------------------------------------------------->
 			
 			<section id="pricing"><!-- Would this section be necessary -->
 				<header>
 					<h2>Choose Your Very Best Pricing Plan</h2>
 				</header>
-				<section>
+				<div>
 					<!-- icon -->
 					<p>$05.00</p>
 					<p>Increase traffic 50%</p><!-- do these characters need to be escaped -->
 					<p>Social Media Marketing</p>
 					<p>10 Free Optimization</p>
 					<p>24/7 support</p>
-				</section>
-				<section>
+				</div>
+				<div>
 					<!-- icon -->
 					<p>$20.00</p>
 					<p>Increase traffic 50%</p><!-- do these characters need to be escaped -->
 					<p>Social Media Marketing</p>
 					<p>10 Free Optimization</p>
 					<p>24/7 support</p>
-				</section>
-				<section>
+				</div>
+				<div>
 					<!-- icon -->
 					<p>$30.00</p>
 					<p>Increase traffic 50%</p><!-- do these characters need to be escaped -->
 					<p>Social Media Marketing</p>
 					<p>10 Free Optimization</p>
 					<p>24/7 support</p>
-				</section>
+				</div>
 			</section>
-		</div>
-	</section>
+		
+	
 	
 	<section class="wrapper"> <!-- testemonial -->
-		<div class="row">
+		
 			<header>
 				<h2>What Client Say About Us</h2>
 			</header>
+		<blockquote class="">
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-			<div>
+		</blockquote>
+			<div class="row">
 				<!-- icon -->
-			</div>
-			<div>
+			<div class="">
 				<p>Olivia Jems</p>
 				<p>UIX designer</p>
 			</div>
-		</div>
+			</div>
 	</section>
 	
 	<section id="blog">
@@ -212,7 +217,7 @@
 		</div>
 	</section>
 	
-	<footer> <!-- I dont know how to tackle this. D: -->
+	<footer> <!-- I dont know how to tackle this. D: --><!-- I am still very confused -->
 		<address id="contact"> <!-- is this an address? -->
 			<div class="wrapper row">
 				<header><!-- would this even be a header -->
@@ -237,9 +242,9 @@
 			</div>
 		</address>
 	
-		<div>
+		<nav>
 			<header>
-				<h3>Quick Links</h3>
+				<h4>Quick Links</h4>
 			</header>
 			<ul>
 				<li><a href="#about">About</a></li>
@@ -248,11 +253,11 @@
 				<li><a href="#blog">Blog</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
-		</div>
+		</nav>
 		
-		<div>
+		<section>
 			<header>
-				<h3>Support</h3>
+				<h4>Support</h4>
 			</header>
 			<ul>
 				<li><a href="#">Privacy Policy</a></li>
@@ -261,11 +266,11 @@
 				<li><a href="#">FAQs</a></li>
 				<li><a href="#">Report a bugb</a></li>
 			</ul>
-		</div>
+		</section>
 		
-		<div>
+		<section>
 			<header>
-				<h3>Core Features</h3>
+				<h4>Core Features</h4>
 			</header>
 			<ul>
 				<li><a href="#">Email Marketing</a></li>
@@ -274,7 +279,7 @@
 				<li><a href="#">Lead Generation</a></li>
 				<li><a href="#">24/7 Support</a></li>
 			</ul>
-		</div>
+		</section>
 		
 	</footer>
 
