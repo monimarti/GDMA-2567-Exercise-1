@@ -28,6 +28,8 @@
         - Framework
 6.0 - Components: specific designed components -- (very specific pieces of code) 
         - Buttons
+		- Typography
+		- Layout
         - Header
         - Navigation 
 7.0 - Utilities: utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
@@ -39,7 +41,31 @@
 3.0 - Generic 
 -------------------------------------------------------------- */
 
+*{
+	font-family: 'Poppins', sans-serif;
+}
 
+*:focus  {
+    outline: 0;
+}
+
+html {
+	font-size: 1rem;
+	line-height: 1.5rem;
+}
+
+@media screen and (min-width: 768px){
+	html{
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+}
+
+@media screen and (min-width: 1024px){
+	html{
+		font-size: 1.1rem;
+	}
+}
 
 /*--------------------------------------------------------------
 4.0 - Elements 
@@ -52,11 +78,19 @@
 
 /*  NAVIGATION  */
 
+a { 
+text-decoration: none;
+}
+
+li {
+	display: inline-block;
+}
+
 /*  BODY  */
 
 
 /*--------------------------------------------------------------
-5.0 - Objects 
+5.0 - Objects - OVER RIDING FRAMEWORK  
 -------------------------------------------------------------- */
 
 
@@ -70,22 +104,177 @@
  
 /*  TYPOGRAPHY  */ /*-- FONT SIZE LINE HEIGHT WEIGHT COLOR --*/
 
+h2,h3, .header-txt {
+	color: #000047; /* dark blue */
+}
+
+p, footer li a, footer a {
+	color: #646F82;
+}
+
+li a, footer p, footer a:hover, footer li a:hover{
+	color: #000047;
+}
+
+li a:hover {
+	color: #3F47B5;
+}
+
+.pink-txt  {
+	color: #ED6C98;
+}
+
+.header-txt {
+	font-size: 3rem;
+	line-height: 3rem;
+	font-weight: 700;
+	
+}
 
 
 /*  LAYOUT  */ /*-- MARGIN PADDING --*/
 
+@media screen and (min-width: 1024px){
+	#hero-bg {
+	background: url("../img/hero-bg.jpg") no-repeat right;
+	width: 100%;
+
+	}
+}
+
+h1 img, .blue-bttn {
+	margin-left: 80px;
+}
+
+h2, #pricing h3{
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+#create h2, #services h3 {
+	text-align: left;
+}
+
+#pricing, h2,h3, #about {
+	text-align: center;
+}
+
+#about h2, #create  {
+	margin: 100px 0;
+}
+
+#services section, #pricing section {
+	border: solid thin #C5CCD7;
+	border-radius: 10px;
+	padding-top: 20px;
+	
+}
+
+#services section:hover {
+	color: pink;
+}
+
+ #avatar {
+	display: block;
+	line-height: .5rem;
+}
+
+span:first-child {
+	text-align: center;
+	color: #7046B5;
+	
+}
+
+#intro-image {
+	z-index: -1;
+	position: absolute;
+	height:500px;
+}
+
+/*  NAVIGAION  */
+
+header nav li {
+	margin-left:10px;
+	
+}
 
 /*  FOOTER  */
 
+footer li {
+	display: block;
+	
+}
 
+footer p:last-child {
+	text-align: center;
+}
+
+i span {
+	display: none;
+}
+
+i:hover {
+	background-color: #C5CCD7;
+}
+
+i {
+	padding: 20px;
+	color: #646F82;
+}
 
 /*  BUTTON  */
 
+#about a {
+	color: #C5CCD7;
+	font-variant: small-caps;
+}
+
+#about a:hover {
+	color: #7046B5;
+	
+}
+
+#about section:hover {
+	border: solid #FAF9FC; 
+	border-radius: 25px;
+	padding: 20px;
+}
+
+#about section {
+	padding: 40px;
+}
+.pink-bttn {
+	background-color: #ED6C98;
+	color: #fff;
+	padding: 10px 40px;
+	border-radius: 5px;
+}
+
+.pink-bttn:hover {
+	color: #ED6C98;
+	background-color: #fff;
+	border: solid #ED6C98;
+}
+
+.blue-bttn {
+	color: #fff;
+	background-color: #3F47B5;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.blue-bttn:hover {
+	color: #3F47B5;
+	background-color: #fff;
+	border: solid #3F47B5;
+}
 /*--------------------------------------------------------------
 7.0 - Utilities -- CLASS SELECTOR THAT DOES 1 THING APPLIED TO ANY ELEMENT INSTEAD OF GROUPING THINGS --
 -------------------------------------------------------------- */
 
 /*  COLOR  */
+
+
 
 
 
